@@ -27,9 +27,8 @@ public class Execute {
                 int button = InputEvent.BUTTON1_DOWN_MASK;
                 while(toggleClicker){
                     clicker.mousePress(button);
-                    Thread.sleep(10);
+                    Thread.sleep(1);
                     clicker.mouseRelease(button);
-                    Thread.sleep(10);
                 }
             }catch(Exception e){
                 e.printStackTrace();
