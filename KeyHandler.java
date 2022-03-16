@@ -5,7 +5,8 @@ import com.github.kwhat.jnativehook.keyboard.NativeKeyListener;
 
 public class KeyHandler implements NativeKeyListener{
     @Override
-    public void nativeKeyTyped(NativeKeyEvent e){
+    public void nativeKeyPressed(NativeKeyEvent e){
+        NativeKeyListener.super.nativeKeyTyped(e);
         if(e.getKeyCode() == NativeKeyEvent.VC_SPACE){
             Execute.toggleClicker = !Execute.toggleClicker;
         }
@@ -13,4 +14,5 @@ public class KeyHandler implements NativeKeyListener{
             Execute.endClicker = false;
         }
     }
+
 }

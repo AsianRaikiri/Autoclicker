@@ -34,5 +34,6 @@ public class Execute {
                 e.printStackTrace();
             }
         }
+        System.exit(0);
     }
 }
